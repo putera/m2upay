@@ -1,5 +1,7 @@
 # Maybank2U Pay - PHP SDK
 
+<a href="https://packagist.org/packages/putera/m2upay"><img src="https://poser.pugx.org/putera/m2upay/v/stable.svg" alt="Latest Stable Version"></a>
+
 This is an PHP SDK library for Maybank2U Pay
 
 ## Installation
