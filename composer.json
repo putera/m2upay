@@ -1,0 +1,26 @@
+{
+    "name": "putera/m2upay",
+    "description": "Maybank2U Pay - PHP SDK",
+    "keywords": ["maybank", "maybank2u", "maybank2u pay", "m2u pay", "m2upay"],
+    "type": "library",
+    "homepage": "https://github.com/putera/m2upay",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zulkifli Mohamed",
+            "email": "mr.putera@gmail.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": ">=5.5 <=7.1",
+            "ext-mcrypt": "*"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "M2U\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"    
+}
