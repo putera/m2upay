@@ -69,4 +69,5 @@ class M2UPay
 		// Return the encrypted data and actionUrl as Merchant API response
 		return json_encode(array('encryptedString' => $dataStringEncrypted, 'actionUrl' => $actionUrl));
     }
+}
 ?>
