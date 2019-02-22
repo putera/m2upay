@@ -18,8 +18,10 @@ composer require putera/m2upay
 Alternatively, add the dependency directly to your `composer.json` file:
 
 ```json
-"require": {
-    "putera/m2upay": "*"
+{
+	"require": {
+    	"putera/m2upay": "*"
+	}
 }
 ```
 
