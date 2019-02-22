@@ -19,5 +19,7 @@
         "psr-4": {
             "M2U\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
