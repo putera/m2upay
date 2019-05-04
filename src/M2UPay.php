@@ -18,11 +18,11 @@ class M2UPay
 
     public function getEncryptionData($data, $envType)
     {
-		$amount = array_key_exists('amount', $data) ? $data['amount'] : ' ';
-        $accountNumber = array_key_exists('accountNumber', $data) ? $data['accountNumber'] : ' ';
-        $payeeCode = array_key_exists('payeeCode', $data) ? $data['payeeCode'] : ' ';
-        $refNumber = array_key_exists('refNumber', $data) ? $data['refNumber'] : ' ';
-        $redirect_url = array_key_exists('callbackUrl', $data) ? $data['callbackUrl'] : ' ';
+		$amount = $data['amount'];
+        $accountNumber = $data['accountNumber'];
+        $payeeCode = $data['payeeCode'];
+        $refNumber = $data['refNumber'];
+        $redirect_url = $data['callbackUrl'];
 
         //Passed in parameter based on M2U requirment for send string
         $dataString = '';
@@ -53,7 +53,7 @@ class M2UPay
 		if ($envType == 1)
 		{
 			// User Acceptance Test (UAT) Environment
-			$actionUrl = "https://m2upayuat.maybank2u.com.my/testM2uPayment";
+			$actionUrl = "https://202.162.18.55:8443/testM2uPayment";
 		}
 		else if ($envType == 2)
 		{
@@ -63,7 +63,7 @@ class M2UPay
 		else
 		{
 			// Sandbox or Playground Environment
-			$actionUrl = "https://api.maybanksandbox.com/v1.0/testM2uPayment";
+			$actionUrl = "https://api.discotech.io/v1.0/testM2uPayment";
 		}
 		
 		// Return the encrypted data and actionUrl as Merchant API response
