@@ -64,6 +64,16 @@ $mydata = array(
 
 $encryptedData = $m2upay->getEncryptionData($mydata, $envType);
 
+
+// HTML Render
+<div id="m2upay"></div>
+
+<script type="text/javascript" src="/path/to/m2upay/src/M2UPay.js"></script>
+
+<script>
+	var encrypt_data = <?php echo $encryptedData; ?>
+	M2UPay.initPayment(encrypt_data.encryptedString, encrypt_data.actionUrl, 'OT');
+</script>
 ```
 
 Thanks !
